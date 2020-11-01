@@ -1,0 +1,1 @@
+import{b as O}from"./p-c50318f7.js";const I="CHARITE"===O,A=O.indexOf("OFFICIAL_COLLABORATION")>-1,L="OFFICIAL_COLLABORATION_BZGA"===O,s="OFFICIAL_COLLABORATION_BMG"===O,C="OFFICIAL_COLLABORATION_RKI"===O,a=!A;export{a as I,C as a,s as b,L as c,I as d,A as e}

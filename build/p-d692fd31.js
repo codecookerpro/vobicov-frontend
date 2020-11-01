@@ -1,0 +1,1 @@
+import{L as a,Q as o}from"./p-5aac379d.js";const t={match:()=>localStorage.getItem(a.VERSION)===o,set:()=>{localStorage.setItem(a.VERSION,o)},reset:()=>{for(const o in a)a[o]!==a.SOURCE&&localStorage.removeItem(a[o])}};export{t as v}
