@@ -1,0 +1,1 @@
+System.register(["./p-cc411d04.system.js"],(function(O){"use strict";var I;return{setters:[function(O){I=O.b}],execute:function(){var A=O("d",I==="CHARITE");var e=O("e",I.indexOf("OFFICIAL_COLLABORATION")>-1);var r=O("c",I==="OFFICIAL_COLLABORATION_BZGA");var t=O("b",I==="OFFICIAL_COLLABORATION_BMG");var L=O("a",I==="OFFICIAL_COLLABORATION_RKI");var s=O("I",!e)}}}));
