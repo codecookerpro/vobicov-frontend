@@ -1,0 +1,6 @@
+mic-recorder-to-mp3 package is used to record audio stream.
+If build this project, there should be errors for undefined variables.
+To fix this error, recorder pagkage's index.js file is patched directly.
+So if node modules are installed newly, patching is recommended for correct working.
+
+Thank you.

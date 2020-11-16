@@ -207,11 +207,11 @@
     "start__sub_headline_5": "Also use the CovApp and help fight COVID-19",
     "start_headline": "Recommendations and information regarding coronavirus",
     "start_legal_paragraph": "<strong>This application is not an application that provides diagnostic services. The application serves to simplify the procedures in care.</strong>",
-    "start_paragraph_1_option_1": "[TRANSLATION/CONTENT needed for translation key: start_paragraph_1_option_1]",
+    "start_paragraph_1_option_1": "Contacts to services in Germany",
     "start_paragraph_1_option_2": "Decision support for doctor's visit or coronavirus test",
     "start_paragraph_1_option_3": "Information to reduce your risk",
     "start_paragraph_1_option_4": "Optimize patient flow",
-    "start_paragraph_2": "[TRANSLATION/CONTENT needed for translation key: start_paragraph_2]",
+    "start_paragraph_2": "The CovApp is software developed by Charité in cooperation with Data4Life. You can use it to get recommendations for action in just a few minutes. The app asks you several questions including symptoms and potential contacts. Besides recommendations for action, relevant contacts, and structured results, the purpose of the app is to guide you safely through the various healthcare offers and, if necessary, to show you the way to hospitals or to examination centers. Please note that this app does not provide diagnostic services.\nIn this way, the CovApp can help you to better assess your medical condition, provide recommendations regarding doctor’s visits or coronavirus testing, and summarize relevant medical information for future doctor’s consultation.",
     "start_paragraph_3": "<p>The survey is evaluated anonymously, and all information is processed on your device (for example, your smartphone). None of your answers will be forwarded to us, our server, or any third party. </p>",
     "start_paragraph_4": "<p>The use of this app does not qualify as medical treatment. If you currently feel seriously ill, please seek medical help.</p>",
     "start_sub_headline_1": "Prepare your doctor's visit",
@@ -221,6 +221,36 @@
     "summary_headline": "Your summary",
     "summary_reset_button": "Delete answers",
     "summary_reset_headline": "Do you want to do the test again?",
-    "test_respiratory_fitness": "Test Respiratory Fitness"
+
+    
+    "respiratory_headline_1": "Vocal Recording",
+    "respiratory_headline_2": "Sentence Recording",
+    "respiratory_headline_3": "Fitness Result",
+    
+    "respiratory_chart_factor_1": "Breathing Potency",
+    "respiratory_chart_factor_2": "Language Quality",
+    "respiratory_chart_factor_3": "Daily Symptoms",
+
+    "respiratory_recording_vocal": "Say:   a a a a, e e e e, i i i i, o o o o, u u u u",
+    "respiratory_recording_text": "Say:   Hello. The world is amazing place. Please stay healthy",
+    "respiratory_recording_first_button": "Test Respiratory Fitness",
+    "respiratory_recording_next_button": "Next Recording",
+    "respiratory_recording_start_button": "Start Recording",
+    "respiratory_recording_stop_button": "Stop Recording",
+    "respiratory_recording_repley_sound": "Replay",
+    
+    "respiratory_result_show_button": "See your result",
+    "respiratory_result_header_title": "Analysis successful",
+    "respiratory_result_header_content": "Thank you for submitting your details. We were able to evaluate your data successfully.",
+    "respiratory_result_header_1": "Today's analysis",
+    "respiratory_result_header_2": "Your values ​​in comparison",
+    "respiratory_result_factor_1": "Voice quality factor",
+    "respiratory_result_factor_2": "Respiratory potency",
+    "respiratory_result_factor_1_desc": "This value tests your voice samples for hoarseness. The higher the value, the better",
+    "respiratory_result_factor_2_desc": "This represents the strength with which you can breathe",
+    "respiratory_result_column_1": "Type",
+    "respiratory_result_column_2": "Today's value",
+    "respiratory_result_column_3": "Your average ⦵",
+    "respiratory_result_column_4": "Global average ⦵"
   }
 }

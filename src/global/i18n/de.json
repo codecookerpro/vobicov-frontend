@@ -207,11 +207,11 @@
     "start__sub_headline_5": "Verwenden auch Sie die CovApp im Kampf gegen COVID-19",
     "start_headline": "Handlungsempfehlungen und Informationen zum Coronavirus",
     "start_legal_paragraph": "<strong>Bei der digitalen Anwendung handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Vereinfachung der Handlungsabläufe in der Versorgung.</strong>",
-    "start_paragraph_1_option_1": "[TRANSLATION/CONTENT needed for translation key: start_paragraph_1_option_1]",
+    "start_paragraph_1_option_1": "Ansprechpartner und Angebote für Ihr Bundesland",
     "start_paragraph_1_option_2": "Entscheidungshilfe bezüglich eines Arztbesuchs oder Coronavirus-Tests",
     "start_paragraph_1_option_3": "Verhaltensweisen zur Reduzierung des Infektionsrisikos",
     "start_paragraph_1_option_4": "Optimierung der Patientenströme",
-    "start_paragraph_2": "[TRANSLATION/CONTENT needed for translation key: start_paragraph_2]",
+    "start_paragraph_2": "Die CovApp ist eine von der Charité in Zusammenarbeit mit Data4Life entwickelte Software, mit der Sie innerhalb weniger Minuten einen Fragenkatalog beantworten und daraus spezifische Handlungsempfehlungen erhalten. Dafür werden Ihnen Fragen nach aktuellen Symptomen und möglichen Kontakten gestellt. Diese App erbringt keine diagnostischen Leistungen. Sie erhalten aber nach Beantwortung des Fragenkatalogs konkrete Handlungsempfehlungen, Ansprechpartner und Kontakte sowie eine Zusammenfassung Ihrer Daten. Ziel ist es, Sie sicher durch die verschiedenen Angebote der Gesundheitsversorgung zu lotsen und Ihnen ggf. den Weg in Krankenhäuser oder zu Untersuchungsstellen aufzuzeigen.\nSo kann Ihnen die CovApp helfen, die Notwendigkeit eines Arztbesuches oder Coronavirus-Tests besser einzuschätzen. Die medizinisch relevanten Informationen für ein etwaiges Arztgespräch werden am Ende für Sie zusammengefasst.",
     "start_paragraph_3": "<p>Der Fragebogen ist anonym und wird nur auf Ihrem Endgerät (zum Beispiel Smartphone) bearbeitet und gespeichert. Ihre Antworten werden nicht an uns oder über das Internet an Dritte übertragen.</p>",
     "start_paragraph_4": "<p>Die Nutzung dieser App ersetzt keine ärztliche Behandlung. Wenn Sie sich aktuell schwer krank fühlen, rufen Sie bitte umgehend medizinische Hilfe.</p>",
     "start_sub_headline_1": "Vorbereitung des Ihres Arztgespräches",
@@ -221,6 +221,35 @@
     "summary_headline": "Ihre Zusammenfassung",
     "summary_reset_button": "Antworten löschen",
     "summary_reset_headline": "Möchten Sie den Test noch einmal machen?",
-    "test_respiratory_fitness": "Testen Sie die Fitness der Atemwege"
+    
+    "respiratory_headline_1": "Gesangsaufnahme",
+    "respiratory_headline_2": "Satzaufzeichnung",
+    "respiratory_headline_3": "Fitness Ergebnis",
+
+    "respiratory_chart_factor_1": "Atempotenz",
+    "respiratory_chart_factor_2": "Sprachqualitatsfaktor",
+    "respiratory_chart_factor_3": "Tagesaktuelle Symptome",
+
+    "respiratory_recording_vocal": "Sprich: a a a a, e e e e, i i i i, o o o, u u u u",
+    "respiratory_recording_text": "Sag: Hallo. Die Welt ist ein erstaunlicher Ort. Bitte bleiben Sie gesund",
+    "respiratory_recording_first_button": "Testen Sie die Fitness der Atemwege",
+    "respiratory_recording_next_button": "Nächste Aufnahme",
+    "respiratory_recording_start_button": "Starte die Aufnahme",
+    "respiratory_recording_stop_button": "Höre auf, aufzunehmen",
+    "respiratory_recording_repley_sound": "Ton",
+
+    "respiratory_result_show_button": "Sehen Sie Ihr Ergebnis",
+    "respiratory_result_header_title": "Analyse Erfolgreich",
+    "respiratory_result_header_content": "Vielen Dank für das Einreichen Ihrer Daten. Wir konnten Ihre Daten erfolgreich auswerten.",
+    "respiratory_result_header_1": "Heutige Analyse",
+    "respiratory_result_header_2": "Ihre Werte im Vergleich",
+    "respiratory_result_factor_1": "Sprachqualitätsfaktor",
+    "respiratory_result_factor_2": "Atempotenz",
+    "respiratory_result_factor_1_desc": "Dieser Wert untersucht Ihre Stimmproben auf Heiserkeit. Je höher der Wert umso besser",
+    "respiratory_result_factor_2_desc": "Dieser repräsentiert mit welcher Kraft Sie atmen können",
+    "respiratory_result_column_1": "Art",
+    "respiratory_result_column_2": "Der heutige Wert",
+    "respiratory_result_column_3": "Dein Durchschnitt ⦵",
+    "respiratory_result_column_4": "Global average ⦵"
   }
 }

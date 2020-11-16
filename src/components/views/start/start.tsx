@@ -19,7 +19,6 @@ import { trackEvent, TRACKING_EVENTS } from '../../../global/utils/track';
 import version from '../../../global/utils/version';
 import { WHITELISTED_DATA4LIFE_ORIGINS } from '../../../global/custom';
 
-import 'stencil-apexcharts';
 
 const NEXT_ROUTE = {
   DEFAULT: {
@@ -40,6 +39,7 @@ const NEXT_ROUTE = {
   styleUrl: 'start.css',
   tag: 'ia-start',
 })
+
 export class Start {
   @Prop() history: RouterHistory;
 
@@ -59,7 +59,7 @@ export class Start {
   }
 
   componentWillLoad = () => {
-    this.showLogoHeader.emit({ show: true });
+    // this.showLogoHeader.emit({ show: true });
     if (!version.match()) {
       version.reset();
     }
@@ -91,99 +91,7 @@ export class Start {
   render() {
     return (
       <div class="c-card-wrapper start">
-        <d4l-card classes="card--desktop card--text-center">
-          <div class="start__content u-text-align--left" slot="card-content">
-            <apex-chart
-              series={[
-                {
-                  name: 'TEAM A',
-                  type: 'column',
-                  data: [23, 11, 22, 27, 13, 22, 37, 21, 44, 22, 30]
-                }, {
-                  name: 'TEAM B',
-                  type: 'area',
-                  data: [44, 55, 41, 67, 22, 43, 21, 41, 56, 27, 43]
-                }, {
-                  name: 'TEAM C',
-                  type: 'line',
-                  data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
-                }
-              ]}
-              options={{
-                chart: {
-                  height: 350,
-                  type: "line",
-                  stacked: false
-                },
-                stroke: {
-                  width: [0, 2, 5],
-                  curve: "smooth"
-                },
-                plotOptions: {
-                  bar: {
-                    columnWidth: "50%"
-                  }
-                },
-          
-                fill: {
-                  opacity: [0.85, 0.25, 1],
-                  gradient: {
-                    inverseColors: false,
-                    shade: "light",
-                    type: "vertical",
-                    opacityFrom: 0.85,
-                    opacityTo: 0.55,
-                    stops: [0, 100, 100, 100]
-                  }
-                },
-                labels: [
-                  "01/01/2003",
-                  "02/01/2003",
-                  "03/01/2003",
-                  "04/01/2003",
-                  "05/01/2003",
-                  "06/01/2003",
-                  "07/01/2003",
-                  "08/01/2003",
-                  "09/01/2003",
-                  "10/01/2003",
-                  "11/01/2003"
-                ],
-                markers: {
-                  size: 0
-                },
-                xaxis: {
-                  type: "datetime"
-                },
-                yaxis: {
-                  title: {
-                    text: "Points"
-                  },
-                  min: 0
-                },
-                tooltip: {
-                  shared: true,
-                  intersect: false,
-                  y: {
-                    formatter: function(y) {
-                      if (typeof y !== "undefined") {
-                        return y.toFixed(0) + " points";
-                      }
-                      return y;
-                    }
-                  }
-                }
-              }}
-            />
-            <d4l-button
-              classes="button--block"
-              data-test="continueButton"
-              text={i18next.t('test_respiratory_fitness')}
-              is-route-link
-            />
-          </div>
-        </d4l-card>
-
+        <ia-respiratory></ia-respiratory>
         <d4l-card classes="card--desktop card--text-center">
           <div slot="card-header">
             <h1 class="start__headline-1">CovApp</h1>

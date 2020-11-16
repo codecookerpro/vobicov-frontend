@@ -20,6 +20,9 @@ export namespace Components {
     interface IaCallToAction {
         "type": "OPEN_SOURCE" | "WIDGET";
     }
+    interface IaCounter {
+        "started": Boolean;
+    }
     interface IaCovappToData4life {
         "success": boolean;
     }
@@ -36,6 +39,9 @@ export namespace Components {
     }
     interface IaFaq {
         "history": RouterHistory;
+    }
+    interface IaFitnessResult {
+        "resultData": Object;
     }
     interface IaImprint {
         "history": RouterHistory;
@@ -99,11 +105,47 @@ export namespace Components {
     interface IaRecommendation {
         "resultCase": number;
     }
+    interface IaRespiratory {
+    }
+    interface IaSampleChart {
+    }
+    interface IaSoundRecorder {
+        "recorderId": string;
+        "show": boolean;
+    }
     interface IaStart {
         "history": RouterHistory;
     }
     interface IaSummary {
         "history": RouterHistory;
+    }
+    interface JqueryToastr {
+        "options": Object;
+    }
+    interface WsAudioPlayer {
+        /**
+          * The Link To The Audio File
+         */
+        "audio": string;
+        /**
+          * The waveform color
+         */
+        "color": string;
+        "create": () => Promise<void>;
+        "duration": string;
+        /**
+          * The Track Title
+         */
+        "header": string;
+        /**
+          * The height of the waveform
+         */
+        "height": string;
+        "playpause": () => Promise<void>;
+        /**
+          * The player theme
+         */
+        "theme": string;
     }
 }
 declare global {
@@ -130,6 +172,12 @@ declare global {
     var HTMLIaCallToActionElement: {
         prototype: HTMLIaCallToActionElement;
         new (): HTMLIaCallToActionElement;
+    };
+    interface HTMLIaCounterElement extends Components.IaCounter, HTMLStencilElement {
+    }
+    var HTMLIaCounterElement: {
+        prototype: HTMLIaCounterElement;
+        new (): HTMLIaCounterElement;
     };
     interface HTMLIaCovappToData4lifeElement extends Components.IaCovappToData4life, HTMLStencilElement {
     }
@@ -166,6 +214,12 @@ declare global {
     var HTMLIaFaqElement: {
         prototype: HTMLIaFaqElement;
         new (): HTMLIaFaqElement;
+    };
+    interface HTMLIaFitnessResultElement extends Components.IaFitnessResult, HTMLStencilElement {
+    }
+    var HTMLIaFitnessResultElement: {
+        prototype: HTMLIaFitnessResultElement;
+        new (): HTMLIaFitnessResultElement;
     };
     interface HTMLIaImprintElement extends Components.IaImprint, HTMLStencilElement {
     }
@@ -293,6 +347,24 @@ declare global {
         prototype: HTMLIaRecommendationElement;
         new (): HTMLIaRecommendationElement;
     };
+    interface HTMLIaRespiratoryElement extends Components.IaRespiratory, HTMLStencilElement {
+    }
+    var HTMLIaRespiratoryElement: {
+        prototype: HTMLIaRespiratoryElement;
+        new (): HTMLIaRespiratoryElement;
+    };
+    interface HTMLIaSampleChartElement extends Components.IaSampleChart, HTMLStencilElement {
+    }
+    var HTMLIaSampleChartElement: {
+        prototype: HTMLIaSampleChartElement;
+        new (): HTMLIaSampleChartElement;
+    };
+    interface HTMLIaSoundRecorderElement extends Components.IaSoundRecorder, HTMLStencilElement {
+    }
+    var HTMLIaSoundRecorderElement: {
+        prototype: HTMLIaSoundRecorderElement;
+        new (): HTMLIaSoundRecorderElement;
+    };
     interface HTMLIaStartElement extends Components.IaStart, HTMLStencilElement {
     }
     var HTMLIaStartElement: {
@@ -305,17 +377,31 @@ declare global {
         prototype: HTMLIaSummaryElement;
         new (): HTMLIaSummaryElement;
     };
+    interface HTMLJqueryToastrElement extends Components.JqueryToastr, HTMLStencilElement {
+    }
+    var HTMLJqueryToastrElement: {
+        prototype: HTMLJqueryToastrElement;
+        new (): HTMLJqueryToastrElement;
+    };
+    interface HTMLWsAudioPlayerElement extends Components.WsAudioPlayer, HTMLStencilElement {
+    }
+    var HTMLWsAudioPlayerElement: {
+        prototype: HTMLWsAudioPlayerElement;
+        new (): HTMLWsAudioPlayerElement;
+    };
     interface HTMLElementTagNameMap {
         "app-root": HTMLAppRootElement;
         "connect-translations": HTMLConnectTranslationsElement;
         "ia-answers-table": HTMLIaAnswersTableElement;
         "ia-call-to-action": HTMLIaCallToActionElement;
+        "ia-counter": HTMLIaCounterElement;
         "ia-covapp-to-data4life": HTMLIaCovappToData4lifeElement;
         "ia-data-privacy": HTMLIaDataPrivacyElement;
         "ia-data4life": HTMLIaData4lifeElement;
         "ia-disclaimer": HTMLIaDisclaimerElement;
         "ia-export": HTMLIaExportElement;
         "ia-faq": HTMLIaFaqElement;
+        "ia-fitness-result": HTMLIaFitnessResultElement;
         "ia-imprint": HTMLIaImprintElement;
         "ia-input-multiple-choice": HTMLIaInputMultipleChoiceElement;
         "ia-input-postal-code": HTMLIaInputPostalCodeElement;
@@ -337,8 +423,13 @@ declare global {
         "ia-qr-code": HTMLIaQrCodeElement;
         "ia-questionnaire": HTMLIaQuestionnaireElement;
         "ia-recommendation": HTMLIaRecommendationElement;
+        "ia-respiratory": HTMLIaRespiratoryElement;
+        "ia-sample-chart": HTMLIaSampleChartElement;
+        "ia-sound-recorder": HTMLIaSoundRecorderElement;
         "ia-start": HTMLIaStartElement;
         "ia-summary": HTMLIaSummaryElement;
+        "jquery-toastr": HTMLJqueryToastrElement;
+        "ws-audio-player": HTMLWsAudioPlayerElement;
     }
 }
 declare namespace LocalJSX {
@@ -352,6 +443,9 @@ declare namespace LocalJSX {
     }
     interface IaCallToAction {
         "type"?: "OPEN_SOURCE" | "WIDGET";
+    }
+    interface IaCounter {
+        "started"?: Boolean;
     }
     interface IaCovappToData4life {
         "success"?: boolean;
@@ -373,6 +467,9 @@ declare namespace LocalJSX {
     interface IaFaq {
         "history"?: RouterHistory;
         "onShowLogoHeader"?: (event: CustomEvent<any>) => void;
+    }
+    interface IaFitnessResult {
+        "resultData"?: Object;
     }
     interface IaImprint {
         "history"?: RouterHistory;
@@ -442,6 +539,21 @@ declare namespace LocalJSX {
     interface IaRecommendation {
         "resultCase"?: number;
     }
+    interface IaRespiratory {
+        "onNewAppMessage"?: (event: CustomEvent<any>) => void;
+    }
+    interface IaSampleChart {
+        "onEmptyChart"?: (event: CustomEvent<any>) => void;
+        "onHideLoading"?: (event: CustomEvent<any>) => void;
+        "onShowLoading"?: (event: CustomEvent<any>) => void;
+    }
+    interface IaSoundRecorder {
+        "onNewAppMessage"?: (event: CustomEvent<any>) => void;
+        "onStartRecord"?: (event: CustomEvent<any>) => void;
+        "onStopRecord"?: (event: CustomEvent<any>) => void;
+        "recorderId"?: string;
+        "show"?: boolean;
+    }
     interface IaStart {
         "history"?: RouterHistory;
         "onShowLogoHeader"?: (event: CustomEvent<any>) => void;
@@ -450,17 +562,45 @@ declare namespace LocalJSX {
         "history"?: RouterHistory;
         "onShowLogoHeader"?: (event: CustomEvent<any>) => void;
     }
+    interface JqueryToastr {
+        "options"?: Object;
+    }
+    interface WsAudioPlayer {
+        /**
+          * The Link To The Audio File
+         */
+        "audio"?: string;
+        /**
+          * The waveform color
+         */
+        "color"?: string;
+        "duration"?: string;
+        /**
+          * The Track Title
+         */
+        "header"?: string;
+        /**
+          * The height of the waveform
+         */
+        "height"?: string;
+        /**
+          * The player theme
+         */
+        "theme"?: string;
+    }
     interface IntrinsicElements {
         "app-root": AppRoot;
         "connect-translations": ConnectTranslations;
         "ia-answers-table": IaAnswersTable;
         "ia-call-to-action": IaCallToAction;
+        "ia-counter": IaCounter;
         "ia-covapp-to-data4life": IaCovappToData4life;
         "ia-data-privacy": IaDataPrivacy;
         "ia-data4life": IaData4life;
         "ia-disclaimer": IaDisclaimer;
         "ia-export": IaExport;
         "ia-faq": IaFaq;
+        "ia-fitness-result": IaFitnessResult;
         "ia-imprint": IaImprint;
         "ia-input-multiple-choice": IaInputMultipleChoice;
         "ia-input-postal-code": IaInputPostalCode;
@@ -482,8 +622,13 @@ declare namespace LocalJSX {
         "ia-qr-code": IaQrCode;
         "ia-questionnaire": IaQuestionnaire;
         "ia-recommendation": IaRecommendation;
+        "ia-respiratory": IaRespiratory;
+        "ia-sample-chart": IaSampleChart;
+        "ia-sound-recorder": IaSoundRecorder;
         "ia-start": IaStart;
         "ia-summary": IaSummary;
+        "jquery-toastr": JqueryToastr;
+        "ws-audio-player": WsAudioPlayer;
     }
 }
 export { LocalJSX as JSX };
@@ -494,12 +639,14 @@ declare module "@stencil/core" {
             "connect-translations": LocalJSX.ConnectTranslations & JSXBase.HTMLAttributes<HTMLConnectTranslationsElement>;
             "ia-answers-table": LocalJSX.IaAnswersTable & JSXBase.HTMLAttributes<HTMLIaAnswersTableElement>;
             "ia-call-to-action": LocalJSX.IaCallToAction & JSXBase.HTMLAttributes<HTMLIaCallToActionElement>;
+            "ia-counter": LocalJSX.IaCounter & JSXBase.HTMLAttributes<HTMLIaCounterElement>;
             "ia-covapp-to-data4life": LocalJSX.IaCovappToData4life & JSXBase.HTMLAttributes<HTMLIaCovappToData4lifeElement>;
             "ia-data-privacy": LocalJSX.IaDataPrivacy & JSXBase.HTMLAttributes<HTMLIaDataPrivacyElement>;
             "ia-data4life": LocalJSX.IaData4life & JSXBase.HTMLAttributes<HTMLIaData4lifeElement>;
             "ia-disclaimer": LocalJSX.IaDisclaimer & JSXBase.HTMLAttributes<HTMLIaDisclaimerElement>;
             "ia-export": LocalJSX.IaExport & JSXBase.HTMLAttributes<HTMLIaExportElement>;
             "ia-faq": LocalJSX.IaFaq & JSXBase.HTMLAttributes<HTMLIaFaqElement>;
+            "ia-fitness-result": LocalJSX.IaFitnessResult & JSXBase.HTMLAttributes<HTMLIaFitnessResultElement>;
             "ia-imprint": LocalJSX.IaImprint & JSXBase.HTMLAttributes<HTMLIaImprintElement>;
             "ia-input-multiple-choice": LocalJSX.IaInputMultipleChoice & JSXBase.HTMLAttributes<HTMLIaInputMultipleChoiceElement>;
             "ia-input-postal-code": LocalJSX.IaInputPostalCode & JSXBase.HTMLAttributes<HTMLIaInputPostalCodeElement>;
@@ -521,8 +668,13 @@ declare module "@stencil/core" {
             "ia-qr-code": LocalJSX.IaQrCode & JSXBase.HTMLAttributes<HTMLIaQrCodeElement>;
             "ia-questionnaire": LocalJSX.IaQuestionnaire & JSXBase.HTMLAttributes<HTMLIaQuestionnaireElement>;
             "ia-recommendation": LocalJSX.IaRecommendation & JSXBase.HTMLAttributes<HTMLIaRecommendationElement>;
+            "ia-respiratory": LocalJSX.IaRespiratory & JSXBase.HTMLAttributes<HTMLIaRespiratoryElement>;
+            "ia-sample-chart": LocalJSX.IaSampleChart & JSXBase.HTMLAttributes<HTMLIaSampleChartElement>;
+            "ia-sound-recorder": LocalJSX.IaSoundRecorder & JSXBase.HTMLAttributes<HTMLIaSoundRecorderElement>;
             "ia-start": LocalJSX.IaStart & JSXBase.HTMLAttributes<HTMLIaStartElement>;
             "ia-summary": LocalJSX.IaSummary & JSXBase.HTMLAttributes<HTMLIaSummaryElement>;
+            "jquery-toastr": LocalJSX.JqueryToastr & JSXBase.HTMLAttributes<HTMLJqueryToastrElement>;
+            "ws-audio-player": LocalJSX.WsAudioPlayer & JSXBase.HTMLAttributes<HTMLWsAudioPlayerElement>;
         }
     }
 }

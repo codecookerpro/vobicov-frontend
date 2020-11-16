@@ -1,0 +1,17 @@
+@import '../../../../assets/css/bootstrap.min.css';
+
+.fitness-result {
+    margin-top: 10px;
+}
+
+.result-frame {
+    margin-top: 50px;
+}
+
+.result-progress {
+    margin-top: 10px;
+}
+
+.result-header {
+    color: white;
+}

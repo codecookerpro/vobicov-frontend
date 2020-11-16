@@ -25,6 +25,7 @@ export class AppRoot {
   private connectTranslationsEl: HTMLConnectTranslationsElement;
   @State() language: Language;
   @State() appMessage: any = null;
+  @State() appNotification: any = null;
   @State() showLogoHeader: boolean = false;
   @State() isEmbedded: boolean = false;
   @State() hasMadeCookieChoice: boolean;
@@ -51,7 +52,16 @@ export class AppRoot {
         type: event.detail.type,
         text: event.detail.text,
       };
+
+      event.detail.period && setTimeout(() => {
+        this.appMessage = null
+      }, event.detail.period);
     }, 0);
+  }
+  
+  @Listen('newAppNotification', { target: 'document', passive: true })
+  handleAppNotification(event: CustomEvent) {
+    this.appNotification = event.detail;
   }
 
   @Listen('showLogoHeader')
@@ -73,6 +83,17 @@ export class AppRoot {
     this.trackConsentIfGiven();
   };
 
+  loadToken() {
+    const token = settings.getLocalStorageValue('token');
+    token || fetch('https://vobi.vocalsforscience.com/api/token', {
+      method: 'get'
+    })
+    .then(response => response.json())
+    .then(data => {
+      settings.setLocalStorageValue('token', data.token, false);      
+    })
+  }
+
   trackConsentIfGiven() {
     if (settings.acceptsTracking) {
       trackEvent([], 'setConsentGiven');
@@ -82,6 +103,7 @@ export class AppRoot {
   async componentWillLoad() {
     this.language = this.getLanguageByCode(await initialLanguage);
     this.hasMadeCookieChoice = IS_DEV || settings.hasMadeCookieChoice;
+    this.loadToken();
   }
 
   componentDidLoad() {
@@ -93,6 +115,7 @@ export class AppRoot {
     const {
       language,
       appMessage,
+      appNotification,
       showLogoHeader,
       isEmbedded,
       saveSettings,
@@ -128,6 +151,7 @@ export class AppRoot {
               </div>
             </d4l-snack-bar>
           )}
+          {appNotification && (<jquery-toastr options={appNotification} />)}
         </div>
 
         {TRACKING_IS_ENABLED && !hasMadeCookieChoice && !dnt && !isEmbedded && (
@@ -170,7 +194,7 @@ export class AppRoot {
               anchorTitle="Home link"
               anchorClass="u-display-block c-logo"
             >
-              <h1>CovApp</h1>
+              <h1>VOBI</h1>
             </stencil-route-link>
           )}
           <d4l-language-switcher
@@ -184,10 +208,7 @@ export class AppRoot {
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0.1}>
               <stencil-route url="/" component="ia-start" exact />
-              <stencil-route
-                url={ROUTES.QUESTIONNAIRE}
-                component="ia-questionnaire"
-              />
+              <stencil-route url={ROUTES.QUESTIONNAIRE} component="ia-questionnaire" />
               <stencil-route url={ROUTES.SUMMARY} component="ia-summary" />
               <stencil-route url={ROUTES.IMPRINT} component="ia-imprint" />
               <stencil-route url={ROUTES.LEGAL} component="ia-legal" />
