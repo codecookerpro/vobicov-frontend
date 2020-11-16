@@ -16,7 +16,6 @@ export class Counter {
     @State() milliseconds: number = 0;
     @State() seconds: number = 0;
     @State() minutes: number = 0;
-    @State() intervalId: number = 0;
     
     @Listen('changedLanguage', {
         target: 'window',
@@ -59,7 +58,12 @@ export class Counter {
     }
 
     initClock() {
+        this.milliseconds = 0;
+        this.seconds = 0;
+        this.minutes = 0;
+
         this.updateClock();
+        
         var timerItem = localStorage.getItem('ia-covapp-counters');
         var timerIds: Array<number> = timerItem ? JSON.parse(timerItem) : [];
 

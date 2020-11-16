@@ -74,6 +74,8 @@ export class SampleChart {
   @Event() showLoading: EventEmitter;
   @Event() hideLoading: EventEmitter;
   @Event() emptyChart: EventEmitter;
+  // @Event() newAppNotification: EventEmitter;
+  // @Event() newAppMessage: EventEmitter;
   @State() dataBinding: 'empty' | 'unkown' | 'loaded' = 'unkown';
 
   @Listen('changedLanguage', {
@@ -109,7 +111,7 @@ export class SampleChart {
       this.series[1].data.splice(0);
       this.options['labels'].splice(0);
       
-      if (!data || data.length < 2) {
+      if (!data || data.length < 1) {
         this.dataBinding = 'empty';
         this.emptyChart.emit({ empty: true });
       }
@@ -122,6 +124,14 @@ export class SampleChart {
         });
         this.emptyChart.emit({ empty: false });
         this.dataBinding = 'loaded';
+        // this.newAppNotification.emit({ 
+        //   heading: 'Information', 
+        //   text: 'Use VOBI every day to have a history of your respiratory results', 
+        //   stack: false, 
+        //   icon: 'info',
+        //   hideAfter: 5000,
+        //   position: 'bottom-right' 
+        // });
       }
 
       this.hideLoading.emit();
@@ -132,10 +142,12 @@ export class SampleChart {
     return (
       <div class="sample-chart-wrapper" style={{ minHeight: '365px' }}>
         {this.dataBinding == 'loaded' && (
-          <apex-chart
-              series={this.series}
-              options={this.options}
-          />
+          <div>
+            <apex-chart
+                series={this.series}
+                options={this.options}
+            />
+          </div>
         )}
         {this.dataBinding == 'empty' && (
           <img src="assets/images/chart-bg.png" class="empty-chart-img"></img>

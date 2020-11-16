@@ -6,7 +6,8 @@ import MicRecorder from 'mic-recorder-to-mp3';
 
 @Component({
     tag: 'ia-sound-recorder',
-    styleUrl: 'sound-recorder.css'
+    styleUrl: 'sound-recorder.css',
+    shadow: false
 })
 export class SoundRecorder {
     private recorder: MicRecorder;
@@ -133,7 +134,9 @@ export class SoundRecorder {
     }
 
     stop() {
-        // this.recorder.stopRecord();
+        this.started = false;
+        this.completed = true;
+
         this.stream.getTracks().forEach(function (track) {
             if (track.readyState == 'live' && track.kind === 'audio') {
                 track.stop();
@@ -141,8 +144,6 @@ export class SoundRecorder {
         });
 
         this.recorder.stop().getMp3().then(([buffer, blob]) => {
-            this.started = false;
-            this.completed = true;
             this.switchView();
             this.soundUrl = URL.createObjectURL(blob);
             this.stopRecord.emit({ blob, id: this.recorderId });
@@ -176,7 +177,7 @@ export class SoundRecorder {
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-xs-6">
-                        <ia-counter started={this.started}></ia-counter>
+                        <ia-counter started={this.started} />
                     </div>
                 </div>
                 <div class="row">

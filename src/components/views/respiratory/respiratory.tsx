@@ -36,6 +36,7 @@ export class Respiratory {
   @State() emptyChart: boolean = null;
 
   @Event() newAppMessage: EventEmitter;
+  // @Event() newAppNotification: EventEmitter;
 
   componentDidLoad() {
     $(".respiratory").LoadingOverlay("hide", {
@@ -114,6 +115,14 @@ export class Respiratory {
         this.resultData = data;
         this.hideLoading();
         this.currentStep ++;
+        
+        // this.newAppNotification.emit({ 
+        //   heading: 'Success', 
+        //   text: 'Your voice analysis succeed', 
+        //   stack: false, 
+        //   icon: 'info',
+        //   position: 'top-right' 
+        // });
       })
       .catch(() => {
         this.newAppMessage.emit({
