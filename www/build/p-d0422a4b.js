@@ -1,1 +1,0 @@
-const t=t=>getComputedStyle(document.documentElement).getPropertyValue(t);export{t as g}

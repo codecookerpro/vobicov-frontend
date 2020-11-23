@@ -1,1 +1,0 @@
-System.register([],(function(e){"use strict";return{execute:function(){var t=e("g",(function(e){return getComputedStyle(document.documentElement).getPropertyValue(e)}))}}}));
