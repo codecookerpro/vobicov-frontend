@@ -189,13 +189,11 @@ export class AppRoot {
           </div>
           )}
           {!showLogoHeader && (
-            <stencil-route-link
-              url="/"
-              anchorTitle="Home link"
-              anchorClass="u-display-block c-logo"
+            <a href="/"
+              class="u-display-block c-logo"
             >
-              <h1>VOBI</h1>
-            </stencil-route-link>
+              <h1>Human Voice Project</h1>
+            </a>
           )}
           <d4l-language-switcher
             languages={LANGUAGES}
