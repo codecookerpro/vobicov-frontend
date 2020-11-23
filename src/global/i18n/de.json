@@ -226,8 +226,8 @@
     "respiratory_headline_2": "Sprachprobe (2/2)",
     "respiratory_headline_3": "Respiratorische Fitness",
     
-    "respiratory_chart_factor_1": "Stimmenscore",
-    "respiratory_chart_factor_2": "Atemscore",
+    "respiratory_chart_factor_1": "Voice Score",
+    "respiratory_chart_factor_2": "Breath Score",
     "respiratory_chart_factor_3": "Tägliche Symptome",
 
     "respiratory_recording_vocal": "Sag:   'a a a a, e e e e, i i i i, o o o o, u u u u' - Länge der Sprachprobe ca. 5-10 Sekunden",
@@ -243,8 +243,8 @@
     "respiratory_result_header_content": "Danke für das Aufnehmen Deiner Sprachproben. Die Analyse war erfolgreich.",
     "respiratory_result_header_1": "Heutige Auswertung",
     "respiratory_result_header_2": "Deine Werte im Vergleich",
-    "respiratory_result_factor_1": "Stimmenscore",
-    "respiratory_result_factor_2": "Atemscore",
+    "respiratory_result_factor_1": "Voice Score",
+    "respiratory_result_factor_2": "Breath Score",
     "respiratory_result_factor_1_desc": "Diese Wert testet deine Atempotenz. Je höher der Wert, umso besser.",
     "respiratory_result_factor_2_desc": "Dieser Wert testet Deine Sprache auf Potenz und Unregelmäßigkeiten. Je höher der Wert umso besser.",
     "respiratory_result_column_1": "Typ",
