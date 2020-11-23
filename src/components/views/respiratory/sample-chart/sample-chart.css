@@ -1,4 +1,6 @@
 .empty-chart-img {
 	width: 100%;
 	height: 365px;
+	object-fit: cover;
+	filter: blur(1px);
 }

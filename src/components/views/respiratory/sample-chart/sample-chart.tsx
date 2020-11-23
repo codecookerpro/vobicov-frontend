@@ -27,7 +27,7 @@ export class SampleChart {
     },
 
     fill: {
-      opacity: [0.85, 0.25],
+      opacity: [0.85, 0.85],
       gradient: {
         inverseColors: false,
         shade: "light",
@@ -67,7 +67,7 @@ export class SampleChart {
       data: []
     }, {
       name: i18next.t('respiratory_chart_factor_2'),
-      type: 'area',
+      type: 'line',
       data: []
     }
   ];
