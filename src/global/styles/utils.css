@@ -90,3 +90,16 @@
   height: 1px;
   white-space: nowrap;
 }
+
+.btn.btn-primary {
+  background-color:  #ffa45b;
+  border-color:  #ffa45b;
+}
+
+.progress-bar {
+  background-color:  #ffa45b;
+}
+
+.bg-info {
+  background-color: #ffa45b !important;
+}

@@ -230,8 +230,8 @@
     "respiratory_chart_factor_2": "Sprachqualittätsfaktor",
     "respiratory_chart_factor_3": "Tägliche Symptome",
 
-    "respiratory_recording_vocal": "Sag:   a a a a, e e e e, i i i i, o o o o, u u u u",
-    "respiratory_recording_text": "Sag:   Hallo Vobi. Ich nehme gerne an der Studie teil. Dies ist meine Atemprobe. Bitte analysiere die Probe für mich.",
+    "respiratory_recording_vocal": "Sag:   'a a a a, e e e e, i i i i, o o o o, u u u u' - Länge der Sprachprobe ca. 5-10 Sekunden",
+    "respiratory_recording_text": "Sag:   'Hallo Vobi. Ich nehme gerne an der Studie teil. Dies ist meine Atemprobe. Bitte analysiere die Probe für mich.' - Länge der Sprachprobe ca. 5-10 Sekunden",
     "respiratory_recording_first_button": "Teste Deine Respiratorische Fittness",
     "respiratory_recording_next_button": "Nächster Schritt",
     "respiratory_recording_start_button": "Aufnahme starten",

@@ -25,17 +25,9 @@ export class SampleChart {
         columnWidth: "50%"
       }
     },
-
+    colors: ['#ffa45b', '#ffda77'],
     fill: {
       opacity: [0.85, 0.85],
-      gradient: {
-        inverseColors: false,
-        shade: "light",
-        type: "vertical",
-        opacityFrom: 0.85,
-        opacityTo: 0.55,
-        stops: [0, 100, 100, 100]
-      }
     },
     labels: [],
     markers: {

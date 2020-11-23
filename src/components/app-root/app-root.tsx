@@ -192,7 +192,7 @@ export class AppRoot {
             <a href="/"
               class="u-display-block c-logo"
             >
-              <h1>Human Voice Project</h1>
+              <h1>The Human Voice Project</h1>
             </a>
           )}
           <d4l-language-switcher
