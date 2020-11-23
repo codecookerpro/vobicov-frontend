@@ -136,8 +136,9 @@ export class SampleChart {
         {this.dataBinding == 'loaded' && (
           <div>
             <apex-chart
-                series={this.series}
-                options={this.options}
+              series={this.series}
+              options={this.options}
+              class={this.language}
             />
           </div>
         )}
