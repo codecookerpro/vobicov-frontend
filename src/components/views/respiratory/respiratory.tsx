@@ -173,6 +173,17 @@ export class Respiratory {
             </div>
           )}
           <div class="start__content u-text-align--left" slot="card-content">
+            { this.currentStep == 0 && this.emptyChart && (
+              <div class="explanations">
+                <h2 class="start__headline-2 intro">{i18next.t('respiratory_headline')}</h2>
+                <ul class="u-no-margin-top u-padding-bottom--normal">
+                  <li>{i18next.t('respiratory_intro_1')}</li>
+                  <li>{i18next.t('respiratory_intro_2')}</li>
+                  <li>{i18next.t('respiratory_intro_3')}</li>
+                  <li>{i18next.t('respiratory_intro_4')}</li>
+                </ul>
+              </div>
+            ) }
             {this.currentStep == 0 && (
               <ia-sample-chart />
             )}

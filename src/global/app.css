@@ -37,7 +37,7 @@ body {
   padding: 0px;
   font-family: var(--font-sans);
   color: var(--c-gray);
-  background-color: var(--c-tertiary);
+  background-color: #fff;
 }
 
 .radio strong {
@@ -113,4 +113,12 @@ body {
 
 .is-ie + app-root {
   display: none;
+}
+
+
+.start__headline-2 {
+  text-align: center;
+}
+.start__headline-2.intro {
+  margin-top: 20px;
 }

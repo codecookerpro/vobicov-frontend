@@ -230,7 +230,7 @@
     "respiratory_chart_factor_2": "Breath Score",
     "respiratory_chart_factor_3": "Tägliche Symptome",
 
-    "respiratory_recording_vocal": "Sag:   'a a a a, e e e e, i i i i, o o o o, u u u u' - Länge der Sprachprobe ca. 5-10 Sekunden",
+    "respiratory_recording_vocal": "Sag:   'a a a a a' - Länge der Sprachprobe ca. 5 Sekunden",
     "respiratory_recording_text": "Sag:   'Hallo Vobi. Ich nehme gerne an der Studie teil. Dies ist meine Atemprobe. Bitte analysiere die Probe für mich.' - Länge der Sprachprobe ca. 5-10 Sekunden",
     "respiratory_recording_first_button": "Teste Deine Respiratorische Fittness",
     "respiratory_recording_next_button": "Nächster Schritt",
@@ -250,6 +250,11 @@
     "respiratory_result_column_1": "Typ",
     "respiratory_result_column_2": "Heutiger Wert",
     "respiratory_result_column_3": "Dein Durchschnitt ⦵",
-    "respiratory_result_column_4": "Durchschnitt Global ⦵"
+    "respiratory_result_column_4": "Durchschnitt Global ⦵",
+    "respiratory_headline": "Self-Check der respiratorischen Fitness auf Basis von Vocal Biomarkern",
+    "respiratory_intro_1": "Atempotenz ermitteln",
+    "respiratory_intro_2": "Stimmqualität prüfen",
+    "respiratory_intro_3": "Verlauf der respiratorischen Fitness tracken",
+    "respiratory_intro_4": "Vocal Biomarker für Wissenschaft und Forschung spenden"
   }
 }

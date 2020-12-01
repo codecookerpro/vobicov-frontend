@@ -250,6 +250,11 @@
     "respiratory_result_column_1": "Type",
     "respiratory_result_column_2": "Today's value",
     "respiratory_result_column_3": "Your average ⦵",
-    "respiratory_result_column_4": "Global average ⦵"
+    "respiratory_result_column_4": "Global average ⦵",
+    "respiratory_headline": "Self-Check of your respiratory fitness using vocal biomarkers",
+    "respiratory_intro_1": "Determine your breathing score",
+    "respiratory_intro_2": "Analyse your voice quality",
+    "respiratory_intro_3": "Keep track of your respiratory fitness",
+    "respiratory_intro_4": "Donate your vocal biomarkers for science and research"
   }
 }
