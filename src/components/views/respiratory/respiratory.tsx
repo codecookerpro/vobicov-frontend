@@ -46,7 +46,7 @@ export class Respiratory {
 
   @Listen('emptyChart')
   handleEmptyChart(event: CustomEvent) {
-    this.emptyChart = event.detail.empty && this.currentStep == 0;
+    this.emptyChart = event.detail && event.detail.empty && this.currentStep == 0;
   }
 
   @Listen('showLoading')

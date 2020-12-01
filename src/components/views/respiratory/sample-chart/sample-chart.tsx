@@ -89,6 +89,7 @@ export class SampleChart {
     if ( ! token ) {
       this.dataBinding = 'empty';
       this.hideLoading.emit();
+      this.emptyChart.emit({ empty: true });
       return;
     }
 
@@ -102,6 +103,7 @@ export class SampleChart {
       this.series[0].data.splice(0);
       this.series[1].data.splice(0);
       this.options['labels'].splice(0);
+      this.emptyChart.emit({ empty: false });
       
       if (!data || data.length < 1) {
         this.dataBinding = 'empty';
