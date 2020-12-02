@@ -18,7 +18,7 @@
     "button_delete_qr_code": "Fill out new questionnaire",
     "button_show_code": "Display previous QR code",
     "button_start_now": "Start questionnaire",
-    "call_to_action_open_source": "<strong>CovApp open source</strong>\nThe CovApp is open source under MIT license. Find the <a href=\"https://github.com/d4l-data4life/covapp\">code here</a> and the <a href=\"https://www.d4l.io/blog/covapp-faq/\">FAQ here</a>. Create your own version and help fight COVID-19.",
+    "call_to_action_open_source": "<strong>The Human Voice Project</strong>\nThe Human Voice Project is an initiative that aims to use the human voice to predict and treat diseases with voice biomarkers.",
     "call_to_action_widget": "<strong>Use the CovApp for your doctor's office</strong>\nIf you prefer a simple implementation, use our CovApp widget to integrate the app and help as many patients as possible. Find information about <a href=\"https://www.data4life.care/de/corona/#coronavirus-test\">implementation here</a>.",
     "cookie_bar_accept": "Accept",
     "cookie_bar_data_privacy": "privacy policy",
@@ -47,7 +47,7 @@
     "data4life_start_export_button": "Import data",
     "data4life_step_title": "Step {{step}}",
     "disclaimer_headline": "Disclaimer",
-    "disclaimer_paragraph_1": "[TRANSLATION/CONTENT needed for translation key: disclaimer_paragraph_1]",
+    "disclaimer_paragraph_1": "Usage of this app does not substitute medical treatment by a physician or clinical diagnostics. The CovApp serves to improve the procedures at the Charité examination centre and other outpatient clinics in connection with the novel coronavirus SARS-CoV-2. If you currently feel seriously ill, please seek medical help.",
     "disclaimer_paragraph_2": "This website uses cookies, which are necessary for the function of the website. Personal data is not stored and no conclusions regarding the identity of the user can be made.",
     "disclaimer_sub_headline_1": "Remarks regarding usage of cookies",
     "export_checkbox_description_label": "Yes, I consent to the transfer of health data stored locally in the web browser on my device from the Charité CovApp (answers from the CovApp questionnaire) to the Data4Life app for the purpose of storing and exclusively using the data by me as a user of the symptom tracker.\nI can revoke my consent at any time at Data4Life. \nFurther details on data protection can be found in our <a href=\"{{terra_base_url}}/legal/data\" target=\"_blank\">privacy policy</a>.",
@@ -206,7 +206,7 @@
     "risk_very_ill_below_sixty_five": "<strong>You reported shortness of breath.</strong>\nPlease call your general practitioner or the medical on-call service <a href=\"tel:+49116117\">(116117)</a>. If your shortness of breath becomes severe, please seek medical help. ",
     "start__sub_headline_5": "Also use the CovApp and help fight COVID-19",
     "start_headline": "Recommendations and information regarding coronavirus",
-    "start_legal_paragraph": "<strong>This application is not an application that provides diagnostic services. The application serves to simplify the procedures in care.</strong>",
+    "start_legal_paragraph": "The digital application is not an application that provides diagnostic services. The application serves to simplify the procedures in care. The CovApp is a software developed by the Charité in cooperation with Data4Life, which allows you to answer a list of questions within minutes and receive specific recommendations for action. You will be asked questions about current symptoms and possible contacts. This app does not provide diagnostic services. However, after answering the catalog of questions you will receive specific recommendations for action, contact persons and contacts as well as a summary of your data. The aim is to guide you safely through the various healthcare services and, if necessary, show you the way to hospitals or examination centers. In this way, CovApp can help you to better assess the necessity of a visit to the doctor or coronavirus tests. The medically relevant information for a possible consultation with a doctor is summarized for you at the end.",
     "start_paragraph_1_option_1": "Contacts to services in Germany",
     "start_paragraph_1_option_2": "Decision support for doctor's visit or coronavirus test",
     "start_paragraph_1_option_3": "Information to reduce your risk",
@@ -230,8 +230,8 @@
     "respiratory_chart_factor_2": "Breath Score",
     "respiratory_chart_factor_3": "Daily Symptoms",
 
-    "respiratory_recording_vocal": "Say:   'a a a a, e e e e, i i i i, o o o o, u u u u' - Audio duration: 5-10 seconds",
-    "respiratory_recording_text": "Say:   'Hello. This is my speech being recorded. Please stay safe and healthy.' - Audio duration: 5-10 seconds",
+    "respiratory_recording_vocal": "Say:   'a a a a a' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 15 cm distance to your mouth or connect a headset.",
+    "respiratory_recording_text": "Say:   'Hello. This is my speech being recorded. Please stay safe and healthy.' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 15 cm distance to your mouth or connect a headset.",
     "respiratory_recording_first_button": "Test Your Respiratory Fitness",
     "respiratory_recording_next_button": "Next step",
     "respiratory_recording_start_button": "Start recording",
@@ -255,6 +255,7 @@
     "respiratory_intro_1": "Determine your breathing score",
     "respiratory_intro_2": "Analyse your voice quality",
     "respiratory_intro_3": "Keep track of your respiratory fitness",
-    "respiratory_intro_4": "Donate your vocal biomarkers for science and research"
+    "respiratory_intro_4": "Donate your vocal biomarkers for science and research",
+    "respiratory_intro_disclaimer": "The self check is not an application that provides diagnostic services. The app solely serves the purpose of research and development of algorithms that help diagnosing and treating deseases using vocal biomarkers for the “Human Voice Projects”. The data is initially saved only locally and by pressing the submit button you then donate your data into our scientific research database. "
   }
 }

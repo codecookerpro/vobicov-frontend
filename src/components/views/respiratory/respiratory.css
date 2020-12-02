@@ -42,8 +42,23 @@ ia-respiratory .card--desktop {
 
 .move-center .button {
   position: absolute;
-  top: 45%;
+  top: 39%;
   width: 80%;
   left: 10%;
   box-shadow: 0px 0px 10px 10px white;
+}
+
+.chart-content p {
+  margin-top: 10px;
+}
+
+.chart-content__logo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.chart-content__logo img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 3px;
 }

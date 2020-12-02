@@ -144,11 +144,6 @@ export class Start {
               class="start__legal-note u-padding-vertical--normal u-text-align--center"
               innerHTML={i18next.t('start_legal_paragraph')}
             ></div>
-            {!IS_CHARITE && (
-              <div class="u-text-align--center">
-                <ia-logo-d4l-powered-by />
-              </div>
-            )}
           </div>
         </d4l-card>
         {!IS_CUSTOM && <ia-logo-component />}

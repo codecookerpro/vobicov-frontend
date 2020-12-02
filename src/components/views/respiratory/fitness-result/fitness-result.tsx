@@ -49,7 +49,7 @@ export class FitnessResult {
             <li class="list-group-item">
               <div class="result-progress">
                 <h6>
-                  <b>{vocal}</b>&nbsp;&nbsp;&nbsp;{i18next.t('respiratory_result_factor_1')}
+                  <b>{vocal}/100</b>&nbsp;&nbsp;&nbsp;{i18next.t('respiratory_result_factor_1')}
                 </h6>
                 {i18next.t('respiratory_result_factor_1_desc')}
                 <div class="progress">
@@ -58,7 +58,7 @@ export class FitnessResult {
               </div>
               <div class="result-progress">
                 <h6>
-                  <b>{text}</b>&nbsp;&nbsp;&nbsp;{i18next.t('respiratory_result_factor_2')}
+                  <b>{text}/100</b>&nbsp;&nbsp;&nbsp;{i18next.t('respiratory_result_factor_2')}
                 </h6>
                 {i18next.t('respiratory_result_factor_2_desc')}
                 <div class="progress">

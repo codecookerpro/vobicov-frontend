@@ -185,7 +185,17 @@ export class Respiratory {
               </div>
             ) }
             {this.currentStep == 0 && (
-              <ia-sample-chart />
+              <div class="chart-content">
+                <ia-sample-chart />
+                { this.emptyChart && (
+                  <div>
+                    <p class="small">{i18next.t('respiratory_intro_disclaimer')}</p>
+                    <div class="chart-content__logo">
+                      <img src="assets/images/logo.jpg"></img>
+                    </div>
+                  </div>
+                )}
+              </div>
             )}
             <br />
             {this.currentStep == 1 && (

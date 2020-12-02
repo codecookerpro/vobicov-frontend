@@ -222,20 +222,11 @@ export class AppRoot {
           <footer class="c-footer">
             <ul class="u-list-reset">
               <li>
-                <stencil-route-link
-                  anchorClass="o-link o-link--gray"
-                  url={ROUTES.IMPRINT}
+                <a class="o-link o-link--gray"
+                  href="https://docs.google.com/document/d/10bhzpl9efDnL3_rCJ-mGYaJsL3M9Sf0TVI35TGNcC9k/edit#heading=h.yv0wm9hx3pg7"
                 >
                   {i18next.t('app_root_imprint_link')}
-                </stencil-route-link>
-              </li>
-              <li>
-                <stencil-route-link
-                  anchorClass="o-link o-link--gray"
-                  url={ROUTES.LEGAL}
-                >
-                  {i18next.t('app_root_legal_link')}
-                </stencil-route-link>
+                </a>
               </li>
               <li>
                 <stencil-route-link
@@ -246,12 +237,11 @@ export class AppRoot {
                 </stencil-route-link>
               </li>
               <li>
-                <stencil-route-link
-                  anchorClass="o-link o-link--gray"
-                  url={ROUTES.DATA_PRIVACY}
+                <a class="o-link o-link--gray"
+                  href="https://vocalsforscience.com/data-app/"
                 >
                   {i18next.t('app_root_data_privacy_link')}
-                </stencil-route-link>
+                </a>
               </li>
             </ul>
             <p>
