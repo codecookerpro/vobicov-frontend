@@ -2,7 +2,6 @@ import { Component, h, State, Prop, Listen, Event } from '@stencil/core';
 import i18next from 'i18next';
 import { EventEmitter } from 'stencil-apexcharts/dist/types/stencil.core';
 import MicRecorder from 'mic-recorder-to-mp3';
-// const MicRecorder = require('mic-recorder-to-mp3');
 
 @Component({
     tag: 'ia-sound-recorder',
@@ -54,15 +53,17 @@ export class SoundRecorder {
         var fftSize = 1024;
         var scale = 0.4;
         var freqSpan = Math.floor(scale * fftSize / bars);
+        var that = this;
 
         var soundAllowed = function (stream) {
-            this.stream = stream;
+            that.stream = stream;
 
             //Audio stops listening in FF without // window.persistAudioStream = stream;
             //https://bugzilla.mozilla.org/show_bug.cgi?id=965483
             //https://support.mozilla.org/en-US/questions/984179
             // window.persistAudioStream = stream;
-            var audioContent = new AudioContext();
+            // AudioContext not available on Safari
+            var audioContent = new (window["AudioContext"] || window["webkitAudioContext"])();
             var audioStream = audioContent.createMediaStreamSource(stream);
             var analyser = audioContent.createAnalyser();
             audioStream.connect(analyser);
@@ -100,11 +101,11 @@ export class SoundRecorder {
             //     this.stopRecord.emit({ blob, id: this.recorderId });
             // };
 
-            // this.recorder.startRecord();
+            // this.recorder.startRecord(); 
         }
 
         var soundNotAllowed = function () {
-            this.newAppMessage.emit({
+            that.newAppMessage.emit({
                 type: 'warning',
                 text: 'You must allow your microphone.'
             });
@@ -115,7 +116,16 @@ export class SoundRecorder {
                                   navigator.webkitGetUserMedia ||
                                   navigator.mozGetUserMedia    ||
                                   null;*/
-        navigator.getUserMedia({ audio: true }, soundAllowed.bind(this), soundNotAllowed.bind(this));
+        navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+            var bound = soundAllowed.bind(this);
+            bound(stream);
+        })
+        .catch(function(err) {
+            console.log(err);
+            var bound = soundNotAllowed.bind(this);
+            bound();
+        });
 
         // New instance
         this.recorder = new MicRecorder({

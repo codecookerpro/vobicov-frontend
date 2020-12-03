@@ -40,12 +40,22 @@ ia-respiratory .card--desktop {
   border-radius: 10px;
 }
 
-.move-center .button {
+.move-center .button.sc-d4l-button {
   position: absolute;
-  top: 39%;
+  top: 45%;
   width: 80%;
   left: 10%;
   box-shadow: 0px 0px 10px 10px white;
+}
+
+@media screen and (min-width: 600px) {
+  .move-center .button.sc-d4l-button {
+    position: absolute;
+    top: 39%;
+    width: 80%;
+    left: 10%;
+    box-shadow: 0px 0px 10px 10px white;
+  }
 }
 
 .chart-content p {
