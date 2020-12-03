@@ -22,6 +22,7 @@ import version from '../../../global/utils/version';
 import { RiskSpreading } from './snippets/risk-spreading';
 import { RiskVeryIll } from './snippets/risk-very-ill';
 import { Answers, Scores } from '../questionnaire/questionnaire';
+import settings from '../../../global/utils/settings';
 import { IS_CHARITE } from '../../../global/layouts';
 import {
   WHITELISTED_DATA4LIFE_ORIGINS,
@@ -168,8 +169,32 @@ export class Summary {
     this.scores = availableScores ? availableScores : {};
     this.setResultCase();
     this.setSnippetState();
+    this.storeApiData(this.scores, this.answers);
     localStorage.setItem(LOCAL_STORAGE_KEYS.COMPLETED, 'true');
   };
+
+  storeApiData = (scores, answers) => {
+    const data = {
+      log: {
+        scores: scores,
+        answers: answers
+      }
+    };
+    fetch('https://vobi.vocalsforscience.com/api/log', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Token': settings.getLocalStorageValue('token')
+      },
+      body: JSON.stringify(data)
+    })
+    .then(_ => {
+      console.log("data stored");
+    })
+    .catch(_ => {
+      console.log("error storing data");
+    })
+  }
 
   get isFromData4Life() {
     const source = localStorage.getItem(LOCAL_STORAGE_KEYS.SOURCE);
