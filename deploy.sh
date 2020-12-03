@@ -3,6 +3,7 @@ currentDir=$(pwd)
 npm run build
 cd www
 mv index.html index.php
+cp ../.htaccess .
 rm -rf /tmp/covapp-deploy
 cp -R www /tmp/covapp-deploy
 cd /tmp/covapp-deploy
