@@ -226,8 +226,8 @@
     "respiratory_headline_2": "Speech Sample (2/2)",
     "respiratory_headline_3": "Fitness Result",
     
-    "respiratory_chart_factor_1": "Voice Score",
-    "respiratory_chart_factor_2": "Breath Score",
+    "respiratory_chart_factor_1": "Breath Score",
+    "respiratory_chart_factor_2": "Voice Score",
     "respiratory_chart_factor_3": "Daily Symptoms",
 
     "respiratory_recording_vocal": "Say:   'a a a a a' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 30 cm distance to your mouth or connect a headset.",
@@ -243,8 +243,8 @@
     "respiratory_result_header_content": "Thank you for submitting your details. We successfully evaluated your respiratory fitness.",
     "respiratory_result_header_1": "Today's analysis",
     "respiratory_result_header_2": "Your values ​​in comparison",
-    "respiratory_result_factor_1": "Voice Score",
-    "respiratory_result_factor_2": "Breath Score",
+    "respiratory_result_factor_1": "Breath Score",
+    "respiratory_result_factor_2": "Voice Score",
     "respiratory_result_factor_1_desc": "This value tests your voice for breathing potency. The higher the value, the better",
     "respiratory_result_factor_2_desc": "This value tests your breath for potency and irregularities. The higher the value the better",
     "respiratory_result_column_1": "Type",
