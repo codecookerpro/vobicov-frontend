@@ -230,8 +230,8 @@
     "respiratory_chart_factor_2": "Breath Score",
     "respiratory_chart_factor_3": "Daily Symptoms",
 
-    "respiratory_recording_vocal": "Say:   'a a a a a' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 15 cm distance to your mouth or connect a headset.",
-    "respiratory_recording_text": "Say:   'Hello. This is my speech being recorded. Please stay safe and healthy.' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 15 cm distance to your mouth or connect a headset.",
+    "respiratory_recording_vocal": "Say:   'a a a a a' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 30 cm distance to your mouth or connect a headset.",
+    "respiratory_recording_text": "Say:   'Hello. This is my speech being recorded. Please stay safe and healthy.' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 30 cm distance to your mouth or connect a headset.",
     "respiratory_recording_first_button": "Test Your Respiratory Fitness",
     "respiratory_recording_next_button": "Next step",
     "respiratory_recording_start_button": "Start recording",
