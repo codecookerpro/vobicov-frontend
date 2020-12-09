@@ -176,6 +176,7 @@ export class Respiratory {
             { this.currentStep == 0 && this.emptyChart && (
               <div class="explanations">
                 <h2 class="start__headline-2 intro">{i18next.t('respiratory_headline')}</h2>
+                <p>{i18next.t('respiratory_intro_explanation')}</p>
                 <ul class="u-no-margin-top u-padding-bottom--normal">
                   <li>{i18next.t('respiratory_intro_1')}</li>
                   <li>{i18next.t('respiratory_intro_2')}</li>
@@ -192,7 +193,6 @@ export class Respiratory {
                     <div class="chart-content__logo">
                       <img src="assets/images/logo.jpg"></img>
                     </div>
-                    <p>{i18next.t('respiratory_intro_explanation')}</p>
                     <hr></hr>
                     <p class="small">{i18next.t('respiratory_intro_disclaimer')}</p>
                   </div>

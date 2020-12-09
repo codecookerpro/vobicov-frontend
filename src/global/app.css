@@ -116,9 +116,8 @@ body {
 }
 
 
-.start__headline-2 {
-  text-align: center;
-}
+.start__headline-2 {}
+
 .start__headline-2.intro {
   margin-top: 20px;
 }
