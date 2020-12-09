@@ -140,6 +140,9 @@ export class Start {
                 }}
               />
             )}
+            <h3 class="o-headline-3">{i18next.t('start_sub_headline_2')}</h3>
+            <div innerHTML={i18next.t('start_paragraph_2')}></div>
+            <hr></hr>
             <div
               class="start__legal-note u-padding-vertical--normal u-text-align--center"
               innerHTML={i18next.t('start_legal_paragraph')}
@@ -148,15 +151,10 @@ export class Start {
         </d4l-card>
         {!IS_CUSTOM && <ia-logo-component />}
         <div class="u-padding-vertical--normal">
-          <h3 class="o-headline-3">{i18next.t('start_sub_headline_2')}</h3>
-          <div innerHTML={i18next.t('start_paragraph_2')}></div>
           <h3 class="o-headline-3">{i18next.t('start_sub_headline_3')}</h3>
           <div innerHTML={i18next.t('start_paragraph_3')}></div>
           <h3 class="o-headline-3">{i18next.t('start_sub_headline_4')}</h3>
           <div innerHTML={i18next.t('start_paragraph_4')}></div>
-          <h3 class="o-headline-3">{i18next.t('start__sub_headline_5')}</h3>
-          <ia-call-to-action type="OPEN_SOURCE" />
-          <ia-call-to-action type="WIDGET" />
         </div>
       </div>
     );

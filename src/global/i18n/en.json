@@ -212,7 +212,7 @@
     "start_paragraph_1_option_3": "Information to reduce your risk",
     "start_paragraph_1_option_4": "Optimize patient flow",
     "start_paragraph_2": "The CovApp is software developed by Charité in cooperation with Data4Life. You can use it to get recommendations for action in just a few minutes. The app asks you several questions including symptoms and potential contacts. Besides recommendations for action, relevant contacts, and structured results, the purpose of the app is to guide you safely through the various healthcare offers and, if necessary, to show you the way to hospitals or to examination centers. Please note that this app does not provide diagnostic services.\nIn this way, the CovApp can help you to better assess your medical condition, provide recommendations regarding doctor’s visits or coronavirus testing, and summarize relevant medical information for future doctor’s consultation.",
-    "start_paragraph_3": "<p>The survey is evaluated anonymously, and all information is processed on your device (for example, your smartphone). None of your answers will be forwarded to us, our server, or any third party. </p>",
+    "start_paragraph_3": "<p>The survey and voice analysis is evaluated anonymously. The data is initially processed on your smartphone and then processed and stored on our servers. None of your data will be forwarded to any third party. </p>",
     "start_paragraph_4": "<p>The use of this app does not qualify as medical treatment. If you currently feel seriously ill, please seek medical help.</p>",
     "start_sub_headline_1": "Prepare your doctor's visit",
     "start_sub_headline_2": "What is the CovApp?",
@@ -232,7 +232,7 @@
 
     "respiratory_recording_vocal": "Say:   'a a a a a' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 30 cm distance to your mouth or connect a headset.",
     "respiratory_recording_text": "Say:   'Hello. This is my speech being recorded. Please stay safe and healthy.' - Audio duration: 5-10 seconds. Please sit or stand. Keep your smartphone at around a 30 cm distance to your mouth or connect a headset.",
-    "respiratory_recording_first_button": "Test Your Respiratory Fitness",
+    "respiratory_recording_first_button": "Test your respiratory fitness",
     "respiratory_recording_next_button": "Next step",
     "respiratory_recording_start_button": "Start recording",
     "respiratory_recording_stop_button": "Stop recording",
