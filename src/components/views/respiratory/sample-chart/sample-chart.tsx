@@ -37,7 +37,8 @@ export class SampleChart {
       type: "datetime"
     },
     yaxis: {
-      min: 0
+      min: 0,
+      max: 100
     },
     tooltip: {
       shared: true,

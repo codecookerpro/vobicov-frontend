@@ -47,7 +47,7 @@
     "data4life_start_export_button": "Daten importieren",
     "data4life_step_title": "Schritt {{step}}",
     "disclaimer_headline": "Hinweis",
-    "disclaimer_paragraph_1": "Bei der digitalen Anwendung handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Vereinfachung der Handlungsabläufe in der Versorgung. Die CovApp ist eine von der Charité in Zusammenarbeit mit Data4Life entwickelte Software, mit der Sie innerhalb weniger Minuten einen Fragenkatalog beantworten und daraus spezifische Handlungsempfehlungen erhalten. Dafür werden Ihnen Fragen nach aktuellen Symptomen und möglichen Kontakten gestellt. Diese App erbringt keine diagnostischen Leistungen. Sie erhalten aber nach Beantwortung des Fragenkatalogs konkrete Handlungsempfehlungen, Ansprechpartner und Kontakte sowie eine Zusammenfassung Ihrer Daten. Ziel ist es, Sie sicher durch die verschiedenen Angebote der Gesundheitsversorgung zu lotsen und Ihnen ggf. den Weg in Krankenhäuser oder zu Untersuchungsstellen aufzuzeigen. So kann Ihnen die CovApp helfen, die Notwendigkeit eines Arztbesuches oder Coronavirus-Tests besser einzuschätzen. Die medizinisch relevanten Informationen für ein etwaiges Arztgespräch werden am Ende für Sie zusammengefasst.",
+    "disclaimer_paragraph_1": "Bei der digitalen Anwendung handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Vereinfachung der Handlungsabläufe in der Versorgung. Die CovApp ist eine von der Charité in Zusammenarbeit mit Data4Life entwickelte Software, mit der Sie innerhalb weniger Minuten einen Fragenkatalog beantworten und daraus spezifische Handlungsempfehlungen erhalten. Dafür werden Ihnen Fragen nach aktuellen Symptomen und möglichen Kontakten gestellt. Diese App erbringt keine diagnostischen Leistungen. Sie erhalten aber nach Beantwortung des Fragenkatalogs konkrete Handlungsempfehlungen, Ansprechpartner und Kontakte sowie eine Zusammenfassung Ihrer Daten.",
     "disclaimer_paragraph_2": "Diese Website verwendet einen Cookie, welcher zur Handhabung der Website erforderlich ist. Persönliche Daten, die einen Rückschluss auf Ihre Person zulassen, werden nicht gespeichert.",
     "disclaimer_sub_headline_1": "Hinweis auf die Verwendung von Cookies",
     "export_checkbox_description_label": "Ja, ich willige in die Übermittlung der lokal in meinem Webbrowser meines Endgeräts gespeicherten Gesundheitsdaten aus der Charité CovApp (Antworten aus dem CovApp-Fragebogen) in die Data4Life-App zum Zwecke der Speicherung dieser Daten und zur ausschließlichen Nutzung des Symptom-Tagebuchs durch mich als Nutzer ein.\nIch kann meine Einwilligung jederzeit bei Data4Life widerrufen. \nWeitere Einzelheiten zum Datenschutz finden Sie in unserer <a href=\"{{terra_base_url}}/legal/data\" target=\"_blank\">Datenschutzerklärung</a>.",
@@ -238,7 +238,7 @@
     "respiratory_recording_stop_button": "Aufnahme beenden",
     "respiratory_recording_repley_sound": "Abspielen",
     
-    "respiratory_result_show_button": "Sprachproben Auswerten",
+    "respiratory_result_show_button": "Sprachproben auswerten",
     "respiratory_result_header_title": "Auswertung erfolgreich",
     "respiratory_result_header_content": "Danke für das Aufnehmen Deiner Sprachproben. Die Analyse war erfolgreich.",
     "respiratory_result_header_1": "Heutige Auswertung",
@@ -256,6 +256,7 @@
     "respiratory_intro_2": "Stimmqualität prüfen",
     "respiratory_intro_3": "Verlauf der respiratorischen Fitness tracken",
     "respiratory_intro_4": "Vocal Biomarker für Wissenschaft und Forschung spenden",
-    "respiratory_intro_disclaimer": "Bei dem Self-Check handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Erforschung und Entwicklung von Algorithmen zur Vorhersage und Behandlung von Erkrankungen mit Stimmbiomarkern (sog. Vocal Biomarker) im Rahmen des “Human Voice Projects”. Die Daten werden zunächst nur lokal gespeichert. Mit Klick auf “Absenden” können Sie ihre Vocal Biomarker zur wissenschaftlichen Verwendung spenden."
+    "respiratory_intro_disclaimer": "Bei dem Self-Check handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Erforschung und Entwicklung von Algorithmen zur Vorhersage und Behandlung von Erkrankungen mit Stimmbiomarkern (sog. Vocal Biomarker) im Rahmen des “Human Voice Projects”. Die Daten werden zunächst nur lokal gespeichert. Mit Klick auf “Absenden” können Sie ihre Vocal Biomarker zur wissenschaftlichen Verwendung spenden.",
+    "respiratory_intro_explanation": "Das Human Voice Projekt ist eine Initiative, die es sich zum Ziel gesetzt hat, die menschliche Stimme zur Vorhersage und Behandlung von Erkrankungen mit Stimmbiomarkern (sog. Vocal Biomarker) einzusetzen."
   }
 }

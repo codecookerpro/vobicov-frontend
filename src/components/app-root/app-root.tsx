@@ -223,7 +223,8 @@ export class AppRoot {
             <ul class="u-list-reset">
               <li>
                 <a class="o-link o-link--gray"
-                  href="https://docs.google.com/document/d/10bhzpl9efDnL3_rCJ-mGYaJsL3M9Sf0TVI35TGNcC9k/edit#heading=h.yv0wm9hx3pg7"
+                  href="https://vocalsforscience.com/imprint/"
+                  target="_blank"
                 >
                   {i18next.t('app_root_imprint_link')}
                 </a>
@@ -239,6 +240,7 @@ export class AppRoot {
               <li>
                 <a class="o-link o-link--gray"
                   href="https://vocalsforscience.com/data-app/"
+                  target="_blank"
                 >
                   {i18next.t('app_root_data_privacy_link')}
                 </a>

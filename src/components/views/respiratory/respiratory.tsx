@@ -189,10 +189,12 @@ export class Respiratory {
                 <ia-sample-chart />
                 { this.emptyChart && (
                   <div>
-                    <p class="small">{i18next.t('respiratory_intro_disclaimer')}</p>
                     <div class="chart-content__logo">
                       <img src="assets/images/logo.jpg"></img>
                     </div>
+                    <p>{i18next.t('respiratory_intro_explanation')}</p>
+                    <hr></hr>
+                    <p class="small">{i18next.t('respiratory_intro_disclaimer')}</p>
                   </div>
                 )}
               </div>

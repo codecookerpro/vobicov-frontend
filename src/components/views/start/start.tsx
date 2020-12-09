@@ -144,7 +144,7 @@ export class Start {
             <div innerHTML={i18next.t('start_paragraph_2')}></div>
             <hr></hr>
             <div
-              class="start__legal-note u-padding-vertical--normal u-text-align--center"
+              class="start__legal-note u-padding-vertical--normal"
               innerHTML={i18next.t('start_legal_paragraph')}
             ></div>
           </div>
