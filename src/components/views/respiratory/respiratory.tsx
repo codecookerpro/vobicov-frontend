@@ -203,18 +203,14 @@ export class Respiratory {
             {this.currentStep == 1 && (
               <div class="row">
                     <div class="col-md-12">
-                        <p class="recoder-heading">
-                          {i18next.t('respiratory_recording_vocal')}
-                        </p>
+                      <p class="recoder-heading" innerHTML={i18next.t('respiratory_recording_vocal')}></p>
                     </div>
                 </div>
             )}
             {this.currentStep == 2 && (
               <div class="row">
                     <div class="col-md-12">
-                        <p class="recoder-heading">
-                          {i18next.t('respiratory_recording_text')}
-                        </p>
+                      <p class="recoder-heading" innerHTML={i18next.t('respiratory_recording_text')}></p>
                     </div>
                 </div>
             )}
