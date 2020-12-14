@@ -108,6 +108,9 @@ export namespace Components {
     interface IaRespiratory {
     }
     interface IaSampleChart {
+        "dayLimit": number;
+        "hideOnEmpty": boolean;
+        "sampleData": [];
     }
     interface IaSoundRecorder {
         "recorderId": string;
@@ -543,9 +546,12 @@ declare namespace LocalJSX {
         "onNewAppMessage"?: (event: CustomEvent<any>) => void;
     }
     interface IaSampleChart {
+        "dayLimit"?: number;
+        "hideOnEmpty"?: boolean;
         "onEmptyChart"?: (event: CustomEvent<any>) => void;
         "onHideLoading"?: (event: CustomEvent<any>) => void;
         "onShowLoading"?: (event: CustomEvent<any>) => void;
+        "sampleData"?: [];
     }
     interface IaSoundRecorder {
         "onNewAppMessage"?: (event: CustomEvent<any>) => void;

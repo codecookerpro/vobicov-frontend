@@ -187,7 +187,7 @@ export class Respiratory {
             ) }
             {this.currentStep == 0 && (
               <div class="chart-content">
-                <ia-sample-chart />
+                <ia-sample-chart dayLimit={1} hideOnEmpty={false} />
                 { this.emptyChart && (
                   <div>
                     <div class="chart-content__logo">

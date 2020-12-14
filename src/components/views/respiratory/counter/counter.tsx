@@ -10,13 +10,12 @@ export class Counter {
     private minToken?: HTMLBaseElement;
     private secToken?: HTMLBaseElement;
     private msecToken?: HTMLBaseElement;
+    private prevTimePoint: Date;
+    private milliseconds: number = 0;
 
     @Prop() started: Boolean;
     @State() language: string;
-    @State() milliseconds: number = 0;
-    @State() seconds: number = 0;
-    @State() minutes: number = 0;
-    
+
     @Listen('changedLanguage', {
         target: 'window',
     })
@@ -40,28 +39,24 @@ export class Counter {
             return r;
         }
 
-        this.minToken.textContent = pad(this.minutes, 2);
-        this.secToken.textContent = pad(this.seconds, 2);
+        const now = new Date;
+        const diff = now.getTime() - this.prevTimePoint.getTime();
+        const sec = Math.floor(diff / 1000);
+        const min = Math.floor(sec / 60);
+
+        this.minToken.textContent = pad(min, 2);
+        this.secToken.textContent = pad(sec, 2);
         this.msecToken.textContent = pad(this.milliseconds, 2);
+        this.milliseconds ++;
         
-        this.milliseconds += 1;
-
         if (this.milliseconds >= 100) {
-            this.seconds += 1;
             this.milliseconds = 0;
-        }
-
-        if (this.seconds >= 60) {
-            this.minutes += 1;
-            this.seconds = 0;
         }
     }
 
     initClock() {
-        this.milliseconds = 0;
-        this.seconds = 0;
-        this.minutes = 0;
-
+        this.prevTimePoint = new Date();
+        
         this.updateClock();
         
         var timerItem = localStorage.getItem('ia-covapp-counters');

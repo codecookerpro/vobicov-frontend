@@ -1,4 +1,4 @@
-import { Component, h, State, Listen, Event } from '@stencil/core';
+import { Component, h, State, Prop, Listen, Event } from '@stencil/core';
 import i18next from '../../../../global/utils/i18n';
 import settings from '../../../../global/utils/settings';
 import { EventEmitter } from 'stencil-apexcharts/dist/types/stencil.core';
@@ -9,6 +9,10 @@ import 'stencil-apexcharts';
   styleUrl: 'sample-chart.css'
 })
 export class SampleChart {
+  @Prop() hideOnEmpty: boolean = false;
+  @Prop() dayLimit: number = 1;
+  @Prop() sampleData: [] = null;
+
   @State() language: string;
   @State() options: Object = {
     chart: {
@@ -83,7 +87,31 @@ export class SampleChart {
   }
 
   componentWillLoad() {
-    this.showLoading.emit();
+
+    if ( ! this.sampleData) {
+      this.showLoading.emit();
+    } 
+    else {
+      this.series[0].data.splice(0);
+      this.series[1].data.splice(0);
+      this.options['labels'].splice(0);
+      this.emptyChart.emit({ empty: false });
+      
+      if (this.sampleData.length < this.dayLimit) {
+        this.dataBinding = 'empty';
+      }
+      else {
+        this.sampleData.forEach(item => {
+          this.series[0].data.push(parseInt(item['vocal']));
+          this.series[1].data.push(parseInt(item['text']));
+  
+          this.options['labels'].push(item['day']);
+        });
+        this.dataBinding = 'loaded';
+      }
+
+      return;
+    }
 
     const token = settings.getLocalStorageValue('token');
 
@@ -106,7 +134,7 @@ export class SampleChart {
       this.options['labels'].splice(0);
       this.emptyChart.emit({ empty: false });
       
-      if (!data || data.length < 1) {
+      if (!data || data.length < this.dayLimit) {
         this.dataBinding = 'empty';
         this.emptyChart.emit({ empty: true });
       }
@@ -135,7 +163,7 @@ export class SampleChart {
 
   render() {
     return (
-      <div class="sample-chart-wrapper" style={{ minHeight: '365px' }}>
+      <div class="sample-chart-wrapper" style={{ minHeight: this.hideOnEmpty ? '0px' : '365px' }}>
         {this.dataBinding == 'loaded' && (
           <div>
             <apex-chart
@@ -145,7 +173,7 @@ export class SampleChart {
             />
           </div>
         )}
-        {this.dataBinding == 'empty' && (
+        {this.dataBinding == 'empty' && this.hideOnEmpty == false && (
           <img src="assets/images/chart-bg.png" class="empty-chart-img"></img>
         )}
       </div>

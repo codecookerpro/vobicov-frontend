@@ -103,6 +103,8 @@ export class FitnessResult {
             </li>
           </ul>
         </div>
+        <br />
+        <ia-sample-chart dayLimit={2} hideOnEmpty={true} sampleData={this.resultData['historic']} />
       </div>
     );
   }
